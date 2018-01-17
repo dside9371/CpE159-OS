@@ -1,0 +1,11 @@
+#!/bin/bash
+echo ""
+echo "--------------Making OS-----------"
+echo ""
+spede-mkmf -q
+make
+flash MyOS.dli
+make clean
+clear
+echo "--------------Cleaned-------------"
+ls
