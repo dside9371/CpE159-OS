@@ -1,0 +1,13 @@
+#!/bin/bash
+#place this file into file with
+#code  and type "./auto" to run
+echo ""
+echo "-----------Making OS-----------"
+echo ""
+spede-mkmf -q   #auto make with spede
+make            #make the rest
+flash MyOS.dli  #script paused until exit from flash
+make clean      #clean up what was made
+clear           #clear out terminal text
+echo "-------------Cleaned-----------"
+ls
